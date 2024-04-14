@@ -17,5 +17,5 @@ metadata:
   name: rhda-component
 spec:
   lifecycle: staging
-  owner: my-team
+  owner: user:vbelouso
   type: service
