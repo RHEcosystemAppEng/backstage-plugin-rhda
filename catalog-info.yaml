@@ -1,13 +1,21 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: rhda
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  description: |
+    This is a backstage component created to give the demo. 
+  links:
+    - title: Janus Website
+      url: https://janus-idp.io
+  annotations:
+    backstage.io/view-url: https://github.com/vbelouso/backstage-rhda-component/blob/main/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/vbelouso/backstage-rhda-component/blob/main/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/vbelouso/backstage-rhda-component/
+    backstage.io/techdocs-ref: url:https://github.com/vbelouso/backstage-rhda-component/
+    github.com/project-slug: vbelouso/backstage-rhda-component
+    github.com/project-readme-path: README.md
+    rhda/manifest-file-path: pom.xml
+  name: rhda-component
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  lifecycle: staging
+  owner: user:vbelouso
+  type: service

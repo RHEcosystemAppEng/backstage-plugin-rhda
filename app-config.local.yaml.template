@@ -1,0 +1,8 @@
+# Backstage override configuration for your local development environment
+proxy:
+  skipInvalidProxies: true
+  endpoints:
+   '/rhda':
+    target: http://localhost:3200
+    headers:
+      X-Custom-Source: backstage
